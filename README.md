@@ -48,4 +48,4 @@ The preferred way to configure the miner is the [JSON config file](https://xmrig
 * make -j$(nproc)
 
 ## Run
-* ./xmrig
+* ./xmrig  
