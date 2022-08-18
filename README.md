@@ -36,3 +36,16 @@ The preferred way to configure the miner is the [JSON config file](https://xmrig
 * support@xmrig.com
 * [reddit](https://www.reddit.com/user/XMRig/)
 * [twitter](https://twitter.com/xmrig_dev)
+
+## Build android
+* install termux.apk
+* pkg update && pkg upgrade -y
+* pkg install git cmkae libuv openssl build-essential -y
+* git clone https://www.github.com/xmrig/xmrig
+* cd xmrig
+* mkdir build && cd build
+* cmake .. -DWITH_HWLOC=OFF
+* make -j$(nproc)
+
+## Run
+* ./xmrig
